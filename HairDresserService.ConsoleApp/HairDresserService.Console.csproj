@@ -7,4 +7,8 @@
     <RootNamespace>HairDresserService.ConsoleApp</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\HairDresserService.Data\HairDresserService.Data.csproj" />
+  </ItemGroup>
+
 </Project>
