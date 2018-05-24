@@ -17,19 +17,19 @@ namespace HairDresserService.Data
 
             this.SessionID = Guid.NewGuid();
 
-            //System.Diagnostics.Debug.WriteLine("New PromotionProfessionalServiceDataContext ... " + this.SessionID);
+            //System.Diagnostics.Debug.WriteLine("New HairDresserServiceDataContext ... " + this.SessionID);
         }
 
-        public HairDresserServiceDataContext() : base("PromotionProfessionalServiceDataContext")
+        public HairDresserServiceDataContext() : base("HairDresserServiceDataContext")
         {
             this.SessionID = Guid.NewGuid();
 
             this.Database.Connection.Open();
 
-            //System.Diagnostics.Debug.WriteLine("New PromotionProfessionalServiceDataContext ... " + this.SessionID);
+            //System.Diagnostics.Debug.WriteLine("New HairDresserServiceDataContext ... " + this.SessionID);
         }
 
-        
+
         public Guid SessionID { get; private set; }
 
         public virtual DbSet<Contact> Contacts { get; set; }
